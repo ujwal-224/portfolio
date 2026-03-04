@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects | Ujwal Mallarapu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI', sans-serif;
+        }
+
+        body{
+            background:#0f172a;
+            color:white;
+        }
+
+        header{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 8%;
+        }
+
+        header h2{
+            font-size:28px;
+        }
+
+        nav a{
+            text-decoration:none;
+            color:white;
+            margin-left:25px;
+            font-size:20px;
+            font-weight: 500;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:#39ff14;
+        }
+
+        .active{
+            color:#39ff14;
+        }
+
+        .projects-section{
+            padding:80px 8%;
+        }
+
+        .projects-title{
+            font-size:40px;
+            color:#39ff14;
+            margin-bottom:60px;
+            text-align:center;
+        }
+
+        .projects-container{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+            gap:40px;
+        }
+
+        .project-card{
+            background:#1e293b;
+            padding:30px;
+            border-radius:20px;
+            transition:0.4s;
+            border:1px solid transparent;
+        }
+
+        .project-card:hover{
+            transform:translateY(-10px);
+            border:1px solid #39ff14;
+            box-shadow:0 0 20px rgba(57,255,20,0.2);
+        }
+
+        .project-card h2{
+            color:#39ff14;
+            margin-bottom:15px;
+        }
+
+        .project-card p{
+            line-height:1.6;
+            margin-bottom:20px;
+            font-size:15px;
+        }
+
+        .tech{
+            margin-bottom:20px;
+        }
+
+        .tech span{
+            display:inline-block;
+            background:#0f172a;
+            padding:6px 12px;
+            margin:5px 5px 0 0;
+            border-radius:20px;
+            font-size:13px;
+            border:1px solid #39ff14;
+        }
+
+        .project-btn{
+            display:inline-block;
+            padding:10px 20px;
+            background:linear-gradient(90deg,#39ff14,#00ff99);
+            color:black;
+            text-decoration:none;
+            border-radius:25px;
+            font-weight:600;
+            transition:0.3s;
+        }
+
+        .project-btn:hover{
+            opacity:0.85;
+        }
+
+        footer{
+            text-align:center;
+            padding:25px;
+            background:#0b1220;
+            margin-top:60px;
+            font-size:14px;
+            color:gray;
+        }
+
+        @media(max-width:768px){
+            .projects-title{
+                font-size:32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>Portfolio</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="projects-section">
+
+    <h1 class="projects-title">My Projects</h1>
+
+    <div class="projects-container">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+            <h2>Student Expense Tracker</h2>
+            <p>
+                Student Expense Tracker is a budget management system built to help students 
+                track and analyze their expenses. The application enables users to add, edit, 
+                and categorize transactions, providing a clear overview of their financial habits.
+            </p>
+
+            <div class="tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>LocalStorage</span>
+            </div>
+
+            <a href="https://github.com/ujwal-224/student-expense-tracker.git" 
+               target="_blank" 
+               class="project-btn">
+               View on GitHub
+            </a>
+        </div>
+
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <h2>Electricity Bill Calculator</h2>
+            <p>
+                Electricity Bill Calculator is a billing system developed to automate 
+                the calculation of electricity charges based on unit consumption. 
+                The application uses conditional logic to apply slab-based tariff rates 
+                and provides accurate and instant bill results.
+            </p>
+
+            <div class="tech">
+                <span>Java</span>
+                <span>Conditional Logic</span>
+                <span>OOP Concepts</span>
+            </div>
+
+            <a href="#" class="project-btn">
+                View Code
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Ujwal Mallarapu | All Rights Reserved
+</footer>
+
+</body>
+</html>

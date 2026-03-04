@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About | Ujwal Mallarapu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body{
+            background: #0f172a;
+            color: white;
+        }
+
+        header{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 8%;
+        }
+
+        header h2{
+            font-size:28px;
+            font-weight: 600;
+        }
+
+        nav a{
+            text-decoration:none;
+            color:white;
+            margin-left:25px;
+            font-size:20px;
+            font-weight: 500;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:#39ff14;
+        }
+
+        .about-section{
+            padding:60px 8%;
+        }
+
+        .about-title{
+            font-size:40px;
+            margin-bottom:20px;
+            color:#39ff14;
+        }
+
+        .about-content{
+            max-width:900px;
+            line-height:1.7;
+            font-size:17px;
+            margin-bottom:50px;
+        }
+
+        .skills{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:25px;
+            margin-bottom:60px;
+        }
+
+        .skill-box{
+            background:#1e293b;
+            padding:25px;
+            border-radius:15px;
+            transition:0.3s;
+            border:1px solid transparent;
+        }
+
+        .skill-box:hover{
+            transform:translateY(-8px);
+            border:1px solid #39ff14;
+        }
+
+        .skill-box h3{
+            margin-bottom:15px;
+            color:#39ff14;
+        }
+
+        .education{
+            margin-bottom:60px;
+        }
+
+        .education h2{
+            color:#39ff14;
+            margin-bottom:15px;
+        }
+
+        .goal{
+            background:#1e293b;
+            padding:30px;
+            border-radius:15px;
+            border-left:5px solid #39ff14;
+        }
+
+        footer{
+            text-align:center;
+            padding:25px;
+            background:#0b1220;
+            margin-top:50px;
+            font-size:14px;
+            color:gray;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>Portfolio</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html" style="color:#39ff14;">About</a>
+        <a href="project.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="about-section">
+
+    <h1 class="about-title">About Me</h1>
+
+    <div class="about-content">
+        <p>
+            I am <strong>Ujwal Mallarapu</strong>, a passionate B.Tech student and aspiring Software Developer.
+            I enjoy solving real-world problems using programming and continuously improving my technical skills.
+            My focus is on building strong fundamentals in Data Structures, Algorithms, and Web Development.
+        </p>
+        <br>
+        <p>
+            I believe in consistent learning and practical implementation. Instead of only learning theory,
+            I build projects to strengthen my understanding. I am self-motivated, analytical, and always
+            ready to take on new challenges.
+        </p>
+    </div>
+
+    <div class="skills">
+        <div class="skill-box">
+            <h3>Programming</h3>
+            <p>Java</p>
+            <p>JavaScript</p>
+        </div>
+
+        <div class="skill-box">
+            <h3>Web Technologies</h3>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+        </div>
+
+        <div class="skill-box">
+            <h3>Core Concepts</h3>
+            <p>Data Structures</p>
+            <p>Dynamic Programming</p>
+            <p>Problem Solving</p>
+        </div>
+
+        <div class="skill-box">
+            <h3>Soft Skills</h3>
+            <p>Fast Learner</p>
+            <p>Team Player</p>
+            <p>Strong Analytical Thinking</p>
+        </div>
+    </div>
+
+    <div class="education">
+        <h2>Education</h2>
+        <p>
+            Currently pursuing <strong>B.Tech</strong> in Computer Science.
+            Building strong foundations in programming and software development.
+        </p>
+    </div>
+
+    <div class="goal">
+        <h2>Career Goal</h2>
+        <p>
+            My goal is to continuously improve my technical skills and secure a role as a
+            Software Engineer in a reputed company where I can contribute, learn, and grow.
+        </p>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Ujwal Mallarapu | All Rights Reserved
+</footer>
+
+</body>
+</html>
