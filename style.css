@@ -5,7 +5,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+body{
+    background: #1f242d;
+}
 a{
     text-decoration: none;
     color: #fff;
@@ -105,7 +107,7 @@ a{
     border-radius: 50%;
     font-size: 20px;
     color: #7cf03d;
-    margin: o 8px;
+    margin: 0 8px;
     transition: .5s;
 }
 .home-info .btn-sci .sci a:hover {
@@ -180,4 +182,77 @@ a{
     100%{
         transform: translateY(0%);
     }    
+}
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 480px){
+
+.navbar{
+    position: absolute;
+    padding: 20px 5%;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo */
+
+.navbar .logo{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Menu */
+
+.navbar ul{
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.navbar ul li{
+    margin: 8px 0;
+}
+
+/* Home Section */
+
+.home{
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 120px 5% 0;
+}
+
+/* Text */
+
+.home-info h1{
+    font-size: 32px;
+}
+
+.home-info h2{
+    font-size: 20px;
+}
+
+.home-info p{
+    font-size: 14px;
+}
+
+/* Button + Social */
+
+.home-info .btn-sci{
+    flex-direction: column;
+    gap: 20px;
+}
+
+.home-info .btn-sci .sci{
+    margin-left: 0;
+}
+
+/* Image */
+
+.home-img .img-box{
+    width: 65vw;
+    height: 65vw;
+}
+
 }
